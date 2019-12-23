@@ -9,21 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".login" />
+
         <activity android:name=".MainActivity" />
         <activity android:name=".sign_up" />
+        <activity android:name=".login" />
+        <activity android:name=".mainpage" />
         <activity android:name=".rikshaw1" />
+        <activity android:name=".rikshaw3" />
+        <activity android:name=".rikshaw4" />
         <activity android:name=".rikshaw2"/>
-            <activity android:name=".mainpage">
+        <activity android:name=".rikshaowner">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".rikshaw3" />
-        <activity android:name=".rikshaw4" />
-
     </application>
 
 </manifest>

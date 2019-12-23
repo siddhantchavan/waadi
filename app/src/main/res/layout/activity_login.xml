@@ -24,7 +24,7 @@
 
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/mobileno"
         android:layout_width="324dp"
         android:layout_height="37dp"
         android:layout_marginBottom="8dp"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.467" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -58,7 +58,7 @@
         app:srcCompat="@drawable/brand" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Register"
         android:layout_width="161dp"
         android:layout_height="31dp"
         android:layout_marginBottom="8dp"
@@ -133,7 +133,7 @@
         android:background="@drawable/background"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/mobileno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
