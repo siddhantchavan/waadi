@@ -39,15 +39,23 @@
             android:background="@drawable/toggle" />
 
         <Button
-            android:id="@+id/confirm_bk"
+            android:id="@+id/login_btn"
             android:layout_width="70dp"
             android:layout_height="30dp"
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            />
 
-            android:background="@drawable/login1"
-            android:onClick="gotoLogin"/>
+
+        <TextView
+            android:id="@+id/usern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:text="TextView" />
 
 
     </FrameLayout>
@@ -102,7 +110,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="20dp"
             android:layout_marginRight="15dp"
-
+            android:onClick="gotoTrail"
             android:background="@drawable/train" />
 
         <Button
@@ -149,8 +157,7 @@
             android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-
-
+            android:onClick="gotohotel"
             android:background="@drawable/stay" />
 
 
