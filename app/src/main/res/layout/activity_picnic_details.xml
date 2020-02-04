@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".picnic_details">
+    <com.google.android.material.appbar.AppBarLayout
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/slide_img">
+       <com.google.android.material.appbar.CollapsingToolbarLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/collapsingbar"
+           app:layout_scrollFlags="exitUntilCollapsed|scroll"
+           app:title="Place Name"
+           app:contentScrim="?attr/colorPrimary"
+           app:expandedTitleMarginStart="48dp"
+           app:expandedTitleMarginEnd="64dp">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"></androidx.appcompat.widget.Toolbar>
+           <com.synnapps.carouselview.CarouselView
+               android:id="@+id/picnic_carouse"
+               android:layout_width="match_parent"
+               android:layout_height="230dp"
+               app:fillColor="#FFFFFFFF"
+               app:pageColor="#00000000"
+               app:radius="6dp"
+               app:slideInterval="3000"
+               app:strokeColor="#FF777777"
+               app:strokeWidth="1dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+       </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        <TextView
+            android:id="@+id/picnic_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Description"></TextView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <TextView
+                    android:id="@+id/picnic_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Address"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

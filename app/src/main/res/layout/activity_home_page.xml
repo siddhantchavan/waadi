@@ -140,8 +140,8 @@
             android:layout_gravity="right"
             android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"
-
-            android:background="@drawable/picnic" />
+            android:background="@drawable/picnic"
+            android:onClick="gotopicnic2"/>
 
         <Button
             android:id="@+id/button10"
@@ -151,7 +151,8 @@
             android:layout_marginTop="0dp"
 
 
-            android:background="@drawable/stay" />
+            android:background="@drawable/stay"
+            android:onClick="stays"/>
 
 
     </FrameLayout>
@@ -167,8 +168,8 @@
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="15dp"
-
-            android:background="@drawable/religious" />
+            android:background="@drawable/religious"
+            />
 
 
         <Button
@@ -177,9 +178,8 @@
             android:layout_height="105dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-
             android:background="@drawable/help"
-            />
+            android:onClick="gotopicnicdetails"/>
 
 
     </FrameLayout>

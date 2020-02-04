@@ -4,14 +4,13 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -46,12 +45,13 @@ public class rikshaw_list extends AppCompatActivity {
         final RecyclerView list = findViewById(R.id.lists);
         list.setLayoutManager(new LinearLayoutManager(this));
         reff = FirebaseDatabase.getInstance().getReference().child("member");
-        reff.addListenerForSingleValueEvent(new ValueEventListener() {
+        reff.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot listsnapshot : dataSnapshot.getChildren()) {
                     driver1 = new ArrayList<newdriver>();
+
                     String cust = listsnapshot.child("role").getValue(String.class);
                     if (!cust.isEmpty() && cust.equals("Driver")) {
                         String a = listsnapshot.child("working").getValue().toString().toLowerCase();
@@ -150,7 +150,7 @@ public class rikshaw_list extends AppCompatActivity {
         String s = "tel:" + newdriver.getMobileno();
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse(s));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) !=  PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
             // here to request the missing permissions, and then overriding

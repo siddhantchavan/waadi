@@ -1,7 +1,7 @@
 package com.example.siddhant.loginui;
 
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
@@ -15,8 +15,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.List;
 
 
 public class rikshaw1 extends AppCompatActivity {
@@ -42,7 +40,7 @@ public class rikshaw1 extends AppCompatActivity {
 
         db=FirebaseDatabase.getInstance().getReference();
         db.keepSynced(true);
-        db.child("Sheet1").addListenerForSingleValueEvent(new ValueEventListener() {
+        db.child("Sheet1").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 

@@ -11,4 +11,6 @@ public class waadi extends Application {
         super.onCreate();
         FirebaseDatabase.getInstance().setPersistenceEnabled(true);
     }
+
+
 }

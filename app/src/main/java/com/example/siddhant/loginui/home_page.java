@@ -1,7 +1,7 @@
 package com.example.siddhant.loginui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -31,5 +31,31 @@ public class home_page extends AppCompatActivity {
 
     public void gotoTrail(View view) {
         startActivity(new Intent(getApplicationContext(),trail.class));
+    }
+
+    public void gotovilla(View view) {
+        startActivity(new Intent(getApplicationContext(),new_villa.class));
+    }
+
+    public void gotovilla_destination(View view) {
+        startActivity(new Intent(getApplicationContext(),villa_destination2.class));
+    }
+
+//    public void gotoVilla_card2(View view) {
+//        startActivity(new Intent(getApplicationContext(),villa_card2.class));
+//    }
+//    public void gotopicnic(View view) {
+//         startActivity(new Intent(getApplicationContext(),picnic.class));
+//    }
+    public void stays(View view) {
+        startActivity(new Intent(getApplicationContext(),stays.class));
+    }
+//
+    public void gotopicnic2(View view) {
+        startActivity(new Intent(getApplicationContext(),picnic2.class));
+    }
+
+    public void gotopicnicdetails(View view) {
+        startActivity(new Intent(getApplicationContext(),picnic_details.class));
     }
 }

@@ -1,8 +1,8 @@
 package com.example.siddhant.loginui;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,7 +22,7 @@ public class bus_home extends AppCompatActivity {
 
     AutoCompleteTextView t1;
     AutoCompleteTextView t2;
-    Button sbtn;
+    Button sbtn ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,7 +117,6 @@ public class bus_home extends AppCompatActivity {
 
             }
         });
-
 
     }
 
