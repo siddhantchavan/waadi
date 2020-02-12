@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">login ui</string>
+    <string name="email">email</string>
+    <string name="phone_verification">phone verification</string>
+    <string name="hello_trial">हॅलो चाचणी</string>
+</resources>

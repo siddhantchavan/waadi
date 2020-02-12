@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Waadi</string>
+    <string name="phone_verification">phone verification</string>
+    <string name="email">email</string>
+    <string name="hello_trial">hello trial</string>
+    <string name="title_activity_maps" translatable="false">Map</string>
+    <string name="title_activity_maps2" translatable="false">Map</string>
+    <string name="Rs" translatable="false">\u20B9</string>
+    <string name="icon_heart" translatable="false">f11a</string>
+    <string-array name="nearby">
+        <item>City</item>
+        <item>Beach</item>
+        <item>Forest</item>
+    </string-array>
+    <string name="title_activity_google_map_api">Map</string>
+</resources>
